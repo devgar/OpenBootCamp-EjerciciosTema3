@@ -6,11 +6,11 @@ public class Main {
      * @param palabras Array de Strings con las palabras a ser concatenadas.
      */
     public static String concatenar(String [] palabras){
-        String resultado = "";
+        StringBuilder resultado = new StringBuilder();
         for (String palabra : palabras) {
-            resultado += palabra;
+            resultado.append(palabra);
         }
-        return resultado;
+        return resultado.toString();
     }
     /**
      * Función principal.
